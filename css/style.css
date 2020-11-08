@@ -25,10 +25,39 @@ h2 {
     color: #ffb606;
 }
 
-.questions {
+.question {
     margin-bottom: 10px;
+}
+
+.correct-answer {
+    margin-bottom: 20px;
 }
 
 .submit {
     background-color: #ffb606;
+}
+
+/* .correct-answer1 {
+    display: none;
+} */
+
+.green {
+    color: green;
+}
+
+.show-score {
+    font-size: 1.5rem;
+}
+#show-score {
+    color: black;
+    text-align: center;
+    width: 80px;
+    font-weight: bold;
+    border-radius: 11px;
+    box-shadow: 5px 5px 5px grey;
+    border-color: #ffb606;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    background: #ffb606;
+    margin: 10px;
 }
