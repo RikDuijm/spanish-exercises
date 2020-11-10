@@ -58,3 +58,12 @@ h2 {
     background: #ffb606;
     margin: 10px;
 }
+
+#sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    padding:5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
