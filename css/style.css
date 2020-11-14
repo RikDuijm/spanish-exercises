@@ -67,3 +67,32 @@ h2 {
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
 }
+
+/* table {
+    width: 100%;
+} */
+
+td {
+    
+    padding-right: 30px;
+    height: 30px;
+}
+
+.right {
+    text-align: right;
+    width: 250px;
+    margin-right: 30px;
+}
+
+.center {
+    text-align: center;
+    background-color: #ffb606;
+}
+
+.conjugate {
+    width: 100px;
+}
+
+.verbs, .ser, .estar, .correct {
+    display: none;
+}

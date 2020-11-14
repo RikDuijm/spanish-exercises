@@ -20,6 +20,89 @@
             </div>
         </article>
 
+            <button type="button" id="ser" value="ser">ser</button>
+            <button type="button" id="estar" value="estar">estar</button>
+
+
+        <article class="row">       
+            <div class="col-9">
+                <table class="ser">
+                <th class="center"></th>
+                <th class="center">SER</th>
+                <th class="center"></th>
+                    <tr>
+                        <td class="right">yo</td>
+                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                        <td class="correct">soy</td>
+                    </tr>
+                    <tr>
+                        <td class="right">tú</td>
+                        <td><input type="text" class="conjugate thought" size="15"></td>
+                        <td class="correct">eres</td>
+                    </tr>
+                    <tr>
+                        <td class="right">él / ella / usted</td>
+                        <td><input type="text" class="conjugate thought" size="15"></td>
+                        <td class="correct">es</td>
+                    </tr>
+                    <tr>
+                        <td class="right">nosotros / nosotras</td>
+                        <td><input type="text" class="conjugate thought" size="15">  </td>
+                        <td class="correct">somos</td>
+                    </tr>
+                    <tr>
+                        <td class="right">vosotros / vosotras</td>
+                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                        <td class="correct">sois</td>
+                    </tr>
+                    <tr>
+                        <td class="right">ellos / ellas / ustedes</td>
+                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                        <td class="correct">son</td>
+                    </tr>
+                </table>
+
+                <table class="rdyst">
+                <th class="center"></th>
+                <th class="center">ESTAR</th>
+                <th class="center"></th>
+                    <tr>
+                        <td class="right">yo</td>
+                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                        <td class="correct">estoy</td>
+                    </tr>
+                    <tr>
+                        <td class="right">tú</td>
+                        <td><input type="text" class="conjugate thought" size="15"></td>
+                        <td class="correct">estás</td>
+                    </tr>
+                    <tr>
+                        <td class="right">él / ella / usted</td>
+                        <td><input type="text" class="conjugate thought" size="15"></td>
+                        <td class="correct">está</td>
+                    </tr>
+                    <tr>
+                        <td class="right">nosotros / nosotras</td>
+                        <td><input type="text" class="conjugate thought" size="15">  </td>
+                        <td class="correct">estamos</td>
+                    </tr>
+                    <tr>
+                        <td class="right">vosotros / vosotras</td>
+                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                        <td class="correct">estáis</td>
+                    </tr>
+                    <tr>
+                        <td class="right">ellos / ellas / ustedes</td>
+                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                        <td class="correct">están</td>
+                    </tr>
+                </table>
+                <button type="button" class="check-ser">check</button>
+            
+            </div>
+        </article>    
+
+
         <article class="row">       
             <div class="col-9">
                 <div class="show-score"> Punten: 
@@ -40,8 +123,8 @@
                 
 
                     <div class="col-9">
-                        1. El profesor no <input type="text" class="question" size="8"> en la escuela. 
-                            <div class="given-answer"></div>
+                        1. El profesor no <input type="text" class="question" size="8"> en la escuela. <br>
+                            <!-- <div class="given-answer"></div> -->
                             <div class="correct-answer"><span class="good">Inderdaad!</span><span class="wrong">Helaas!</span>Het correcte antwoord is: <strong>está</strong>.</div>  
 
                         2. El libro <input type="text" class="question" size="8"> encima de la mesa.
