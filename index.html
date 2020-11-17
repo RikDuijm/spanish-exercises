@@ -20,85 +20,438 @@
             </div>
         </article>
 
-            <button type="button" id="ser" value="ser">ser</button>
-            <button type="button" id="estar" value="estar">estar</button>
+        <div class="">
+        <strong>Schrijf dit in het Spaans:</strong><br><br>
+        Waarom voelt Juan zich vandaag triest?<br><br>
+        <input type="text" class="question" size="150"><br><br>
+        <button type="button" value=" querido " class="insert-character">querido </a>
+        <button type="button" value=" mañana " class="insert-character">mañana </a>
+        <button type="button" value=" levantar " class="insert-character">levantar </a>
+        <button type="button" value=" me " class="insert-character">me </a>
+        <button type="button" value=" he " class="insert-character">he </a>
+        <button type="button" value=" yo " class="insert-character">yo </a>
+        <button type="button" value=" temprano " class="insert-character">temprano </a>
+        <button type="button" value=" esta " class="insert-character">esta </a>
+        <button type="button" value=" no " class="insert-character">no </a>
+
+
+
+
+        </div>
+
+
+
+
+
+<select id="verbselector">
+   <option>Kies een werkwoord</option>   
+   <option value="hablar">hablar</option>
+   <option value="beber">beber</option>
+   <option value="vivir">vivir</option>
+   <option value="ser">ser</option>
+   <option value="estar">estar</option>
+   <option value="tener">tener</option>
+   <option value="querer">querer</option>
+   <option value="poder">poder</option>
+   <option value="ir">ir</option>   
+</select>
+            <!-- <button type="button" id="ser" value="ser">ser</button>
+            <button type="button" id="estar" value="estar">estar</button> -->
 
 
         <article class="row">       
             <div class="col-9">
-                <table class="ser">
-                <th class="center"></th>
-                <th class="center">SER</th>
-                <th class="center"></th>
-                    <tr>
-                        <td class="right">yo</td>
-                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
-                        <td class="correct">soy</td>
-                    </tr>
-                    <tr>
-                        <td class="right">tú</td>
-                        <td><input type="text" class="conjugate thought" size="15"></td>
-                        <td class="correct">eres</td>
-                    </tr>
-                    <tr>
-                        <td class="right">él / ella / usted</td>
-                        <td><input type="text" class="conjugate thought" size="15"></td>
-                        <td class="correct">es</td>
-                    </tr>
-                    <tr>
-                        <td class="right">nosotros / nosotras</td>
-                        <td><input type="text" class="conjugate thought" size="15">  </td>
-                        <td class="correct">somos</td>
-                    </tr>
-                    <tr>
-                        <td class="right">vosotros / vosotras</td>
-                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
-                        <td class="correct">sois</td>
-                    </tr>
-                    <tr>
-                        <td class="right">ellos / ellas / ustedes</td>
-                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
-                        <td class="correct">son</td>
-                    </tr>
-                </table>
 
-                <table class="rdyst">
-                <th class="center"></th>
-                <th class="center">ESTAR</th>
-                <th class="center"></th>
-                    <tr>
-                        <td class="right">yo</td>
-                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
-                        <td class="correct">estoy</td>
-                    </tr>
-                    <tr>
-                        <td class="right">tú</td>
-                        <td><input type="text" class="conjugate thought" size="15"></td>
-                        <td class="correct">estás</td>
-                    </tr>
-                    <tr>
-                        <td class="right">él / ella / usted</td>
-                        <td><input type="text" class="conjugate thought" size="15"></td>
-                        <td class="correct">está</td>
-                    </tr>
-                    <tr>
-                        <td class="right">nosotros / nosotras</td>
-                        <td><input type="text" class="conjugate thought" size="15">  </td>
-                        <td class="correct">estamos</td>
-                    </tr>
-                    <tr>
-                        <td class="right">vosotros / vosotras</td>
-                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
-                        <td class="correct">estáis</td>
-                    </tr>
-                    <tr>
-                        <td class="right">ellos / ellas / ustedes</td>
-                        <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
-                        <td class="correct">están</td>
-                    </tr>
-                </table>
-                <button type="button" class="check-ser">check</button>
-            
+                <div class="verbs" id="hablar"> 
+                    <table>
+                    <th class="center"></th>
+                    <th class="center">HABLAR</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">hablo</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">hablas</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">habla</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">hablamos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">habláis</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">hablan</td>
+                        </tr>
+                    </table>
+                </div>    
+
+                <div class="verbs" id="beber"> 
+                    <table>
+                    <th class="center"></th>
+                    <th class="center">BEBER</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">bebo</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">bebes</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">bebe</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">bebemos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">bebéis</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">beben</td>
+                        </tr>
+                    </table>
+                </div>    
+
+                <div class="verbs" id="vivir"> 
+                    <table>
+                    <th class="center"></th>
+                    <th class="center">VIVIR</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">vivo</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">vives</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">vive</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">vivimos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">vivís</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">viven</td>
+                        </tr>
+                    </table>
+                </div>   
+
+                <div class="verbs" id="ser"> 
+                    <table>
+                    <th class="center"></th>
+                    <th class="center">SER</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">soy</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">eres</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">es</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">somos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">sois</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">son</td>
+                        </tr>
+                    </table>
+                </div>    
+                
+                <div class="verbs" id="estar"> 
+                <table>
+                    <th class="center"></th>
+                    <th class="center">ESTAR</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">estoy</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">estás</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">está</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">estamos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">estáis</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">están</td>
+                        </tr>
+                    </table>
+                </div>    
+
+                <div class="verbs" id="tener"> 
+                <table>
+                    <th class="center"></th>
+                    <th class="center">TENER</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">tengo</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">tienes</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">tiene</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">tenemos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">tenéis</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">tienen</td>
+                        </tr>
+                    </table>
+                </div>    
+
+                <div class="verbs" id="querer"> 
+                <table>
+                    <th class="center"></th>
+                    <th class="center">QUERER</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">quiero</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">quieres</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">quiere</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">queremos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">queréis</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">quieren</td>
+                        </tr>
+                    </table>
+                </div>    
+
+                <div class="verbs" id="poder"> 
+                <table>
+                    <th class="center"></th>
+                    <th class="center">PODER</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">puedo</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">puedes</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">puede</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">podemos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">podéis</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">pueden</td>
+                        </tr>
+                    </table>
+                </div>    
+
+                <div class="verbs" id="ir"> 
+                <table>
+                    <th class="center"></th>
+                    <th class="center">IR</th>
+                    <th class="center"></th>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>CORRECTE VERVOEGING</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="right">yo</td>
+                            <td><input type="text" class="conjugate thought" size="15">  <!-- conjugate to loop through as question and correct for color red / green --></td>
+                            <td class="correct">voy</td>
+                        </tr>
+                        <tr>
+                            <td class="right">tú</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">vas</td>
+                        </tr>
+                        <tr>
+                            <td class="right">él / ella / usted</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">va</td>
+                        </tr>
+                        <tr>
+                            <td class="right">nosotros / nosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15">  </td>
+                            <td class="correct">vamos</td>
+                        </tr>
+                        <tr>
+                            <td class="right">vosotros / vosotras</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">vais</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ellos / ellas / ustedes</td>
+                            <td><input type="text" class="conjugate thought" size="15"></td>
+                            <td class="correct">van</td>
+                        </tr>
+                    </table>
+                </div>    
+
+
+
+                              <br><button type="button" class="check">check</button>
             </div>
         </article>    
 

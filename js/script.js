@@ -1,69 +1,42 @@
-/* Verbs ------------------------------------------------------------------------------------------------------*/ 
-
-var verbs = [ { name : 'ser', answers : ['soy', 'eres', 'es', 'somos', 'sois', 'son']}, 
-              { name : 'estar', answers : ['soy', 'eres', 'es', 'somos', 'sois', 'son']}
-];
-
-var ser = ['soy', 'eres', 'es', 'somos', 'sois', 'son', 'estoy', 'estás', 'está', 'estamos', 'estáis', 'están',];
-
-// refer to hidden SER-verb, to display them upon running SER-function
-var serVerb = document.querySelector('.ser');
-
-// select verb SER and start SER-function
-var serButton = document.querySelector('#ser');                 
-serButton.addEventListener('click', serFunction);
-
-
-// buttons hebben een value met naam werkwoord, zodat geselecteerde ww kan matchen met ww in Array en generale functie geschreven kan worden:
-// if name in Array == value van button controleer ingevoerde antwooden met correcte antwoorden.
-
-// console.log(serButton.value); 
-// console.log(verbs[0].name);
-// console.log(verbs[1].name);
-// console.log(verbs.length);
-
-// show the SER-verb
-function serFunction() {
-    serVerb.style.display = 'block';
-}
 
 
 
-// Button to check the answers 
-var checkSerButton = document.querySelector('.check-ser');
-checkSerButton.addEventListener('click', conjugateSer);
 
-var conjugations = document.querySelectorAll('.conjugate'); // the answers of the user
-var correct = document.querySelectorAll('.correct'); // the correct answers
 
-// function conjugateSer () {
-//     for (i = 0; i < verbs[0].answers.length; i++) 
-//     { if (conjugations[i].value == "")  {
-//         console.log('niets ingevuld')
-//     }
-//     else if (conjugations[i].value.toLowerCase() == verbs[0].answers[i]) {
-//         console.log('good')
-//         conjugations[i].style.color = 'green'
-//         correct[i].style.display = 'block';
-//         correct[i].style.color = 'green';
-//     }
-//     else {
-//         console.log('bad')        
-//         conjugations[i].style.color = 'red'
-//         correct[i].style.display = 'block';
-//         correct[i].style.color = 'red';        
-//     }
-// }
-// }
 
-console.log(ser.length);
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------
+var verbAnswers = ['hablo', 'hablas', 'habla', 'hablamos', 'habláis', 'hablan',
+                    'bebo', 'bebes', 'bebe', 'bebemos', 'bebéis', 'beben',
+                    'vivo', 'vives', 'vive', 'vivimos', 'vivís', 'viven',
+                    'soy', 'eres', 'es', 'somos', 'sois', 'son', 
+                    'estoy', 'estás', 'está', 'estamos', 'estáis', 'están',
+                    'tengo', 'tienes', 'tiene', 'tenemos', 'tenéis', 'tienen',
+                    'quiero', 'quieres', 'quiere', 'queremos', 'queréis', 'quieren',
+                    'puedo', 'puedes', 'puede', 'podemos', 'podéis', 'pueden',
+                    'voy', 'vas', 'va', 'vamos', 'vais', 'van'];
+
+
+// Refer to Button "Check" and start Checking the answers. 
+var checkButton = document.querySelector('.check');
+checkButton.addEventListener('click', conjugateSer);
+
+// the answers of the user
+var conjugations = document.querySelectorAll('.conjugate'); 
+
+// the correct answers
+var correct = document.querySelectorAll('.correct'); 
 
 function conjugateSer () {
-    for (i = 0; i < ser.length; i++) 
+    for (i = 0; i < verbAnswers.length; i++) 
     { if (conjugations[i].value == "")  {
         console.log('niets ingevuld')
     }
-    else if (conjugations[i].value.toLowerCase() == ser[i]) {
+    else if (conjugations[i].value.trim().toLowerCase() == verbAnswers[i]) {
         console.log('good')
         conjugations[i].style.color = 'green'
         correct[i].style.display = 'block';
@@ -78,12 +51,13 @@ function conjugateSer () {
 }
 }
 
-
-
-
-
-var estarVerb = document.querySelector('.estar');
-// estarButton.addEventListener('click', estarFunction);
+// select a verb and hide the others. 
+$(function() {
+    $('#verbselector').change(function(){
+        $('.verbs').hide();
+        $('#' + $(this).val()).show();
+    });
+});
 
 
 /* Invuloefening ------------------------------------------------------------------------------------------------------*/ 
@@ -94,13 +68,6 @@ var correctAnswer = document.querySelectorAll('.correct-answer');
 var good = document.querySelectorAll('.good');
 var wrong = document.querySelectorAll('.wrong');
 var score = 0;
-
-
-
-
-
-
-
 
 var answers = [ 'está', 'está', 'es', 'está', 'es', 'están', 
                 'está', 'son', 'estamos', 'está', 'es', 'está', 
@@ -114,7 +81,7 @@ function answerObject () {
     {   if (questions[i].value == "") {
         noAnswer()
         }
-        else if (questions[i].value.toLowerCase() == answers[i]) {
+        else if (questions[i].value.trim().toLowerCase() == answers[i]) {
             good[i].style.display = 'block';
             correctAnswer[i].style.display = 'block';
             correctAnswer[i].style.color = 'green';
