@@ -1,3 +1,16 @@
+#time0, #time1, #time2, #time3, #time4, #time5 {
+    display: none;
+}
+
+.presente, .progresivo, .futuro, .perfecto, .indefinido, .imperfecto {
+    display: none;
+}
+
+.tijd {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 /* ------------------------------------------------------------------------------------------- Body - Layout */
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,9 +28,6 @@ body {
     padding-left: 10px;
 }
 
-.presente {
-    display: none;
-}
 
 /* ------------------------------------------------------------------------------------------- Body -  User Experience / Colour Scheme  */
 h1 {
